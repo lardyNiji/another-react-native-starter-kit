@@ -1,0 +1,48 @@
+{
+  "name": "arnsk",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --fix src",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "generate:app-icons": "yo rn-toolbox:assets --icon src/assets/icons/app-icon/Icone_IOS.png",
+    "test": "jest",
+    "preversion": "yarn config set version-tag-prefix ''",
+    "postversion": "react-native-version -a -r"
+  },
+  "dependencies": {
+    "apisauce": "^0.14.3",
+    "lodash": "^4.17.4",
+    "native-base": "^2.3.5",
+    "prop-types": "^15.6.0",
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.54.0",
+    "react-native-i18n": "^2.0.10",
+    "react-native-router-flux": "^4.0.0-beta.27",
+    "react-native-splash-screen": "^3.0.6",
+    "react-navigation": "^1.0.0-beta.22",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "babel-jest": "22.4.1",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-react-native": "^3.2.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.1.1",
+    "jest": "22.4.2",
+    "react-test-renderer": "^16.3.0-alpha.1",
+    "reactotron-react-native": "^1.14.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

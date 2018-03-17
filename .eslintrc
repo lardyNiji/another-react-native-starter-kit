@@ -1,0 +1,68 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/prefer-stateless-function": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-array-index-key": "off",
+
+    "global-require": "off",
+    "avoidEscape": true,
+    "allowTemplateLiterals": true,
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": [
+          "none",
+          "single",
+          "all",
+          "multiple"
+        ]
+      }
+    ],
+    "import/first": false,
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "function-paren-newline": "off",
+    "arrow-body-style": "off",
+    "no-console": "off",
+    "object-curly-spacing": "off",
+    "padded-blocks": "off",
+    "max-len": "off",
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off",
+    "no-throw-literal": "off"
+  },
+  "plugins": [
+    "react-native",
+    "sort-imports-es6-autofix"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".android.js",
+          ".ios.js"
+        ]
+      }
+    }
+  },
+  "env": {
+    "react-native/react-native": true
+  }
+}
